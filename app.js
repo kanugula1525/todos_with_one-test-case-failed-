@@ -202,7 +202,7 @@ app.post("/todos/", async (request, response) => {
         '${priority}',
         '${status}',
         '${category}',
-        ${dueDate});`;
+        '${dueDate}');`;
     const dbResponse = await db.run(postTodo);
     response.send("Todo Successfully Added");
   }
